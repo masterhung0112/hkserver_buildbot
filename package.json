@@ -1,0 +1,13 @@
+{
+  "name": "hkserver_buildbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "tasksfile.js",
+  "scripts": {
+    "task": "node ./tasksfile.js"
+  },
+  "homepage": "https://github.com/masterhung0112/hk_server#readme",
+  "devDependencies": {
+    "tasksfile": "^5.1.1"
+  }
+}

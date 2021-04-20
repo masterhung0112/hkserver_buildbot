@@ -1,0 +1,5 @@
+version: 3
+services:
+    buildbot:
+      environment:
+        - BUILDBOT_CONFIG_URL=https://github.com/masterhung0112/hkserver_buildbot/archive/master.tar.gz
