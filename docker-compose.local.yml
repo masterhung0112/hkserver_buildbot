@@ -2,8 +2,8 @@ version: "3"
 services:
     buildbot:
       volumes:
-        - ../master.cfg:/var/lib/buildbot/master.cfg
-        - ./hkserver_ssh:/var/lib/buildbot/hkserver_ssh
+        - ./master/master.cfg:/var/lib/buildbot/master.cfg
+        - ./master/hkserver_ssh:/var/lib/buildbot/hkserver_ssh
     #worker:
     #  build:
     #    context: ../worker

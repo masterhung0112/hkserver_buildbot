@@ -3,9 +3,9 @@ services:
   buildbot:
     build:
       context: ./
-      dockerfile: Dockerfile.hkserver_master
+      dockerfile: ./master/Dockerfile.hkserver_master
     env_file:
-      - db.env
+      - ./master/db.env
     environment:
       BUILDBOT_CONFIG_DIR: config
       BUILDBOT_WORKER_PORT: 9989
