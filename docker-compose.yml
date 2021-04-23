@@ -4,6 +4,7 @@ services:
     build:
       context: ./
       dockerfile: ./master/Dockerfile.hkserver_master
+    container_name: hkserver_buildbot_master
     env_file:
       - ./master/db.env
     environment:
@@ -12,5 +13,8 @@ services:
     ports:
       - "8010:8010"
     volumes:
+      - buildbot_lib:/var/lib/buildbot
       - /var/run/docker.sock:/var/run/docker.sock
-    # network_mode: bridge
+
+volumes:
+  buildbot_lib:
