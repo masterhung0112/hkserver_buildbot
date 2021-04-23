@@ -12,4 +12,8 @@ USER root
 #        git && \
 #    rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y wget && \
+    rm -rf /usr/local/go && wget https://golang.org/dl/go1.15.11.linux-amd64.tar.gz && tar -C /usr/local -xzf go1.15.11.linux-amd64.tar.gz && export PATH=$PATH:/usr/local/go/bin && \
+     rm -rf /var/lib/apt/lists/*
+
 USER buildbot
